@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap");
+:root {
+  --theme-color: rgba(24, 220, 255, 1);
+  --secondary-color: #3f3f46;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: #fff;
+  height: 60px;
+}
+.navbar__brand {
+  display: flex;
+  align-items: center;
+}
+.navbar__brand-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.navbar__brand-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+.navbar__brand-name:hover {
+  cursor: pointer;
+  color: var(--theme-color);
+}
+
+.navbar__navlist {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 0 3rem;
+}
+.navbar__navlist-list-item {
+  margin: 0 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+.navbar__navlist-list-item:hover {
+  color: var(--theme-color);
+}
+.header {
+  margin-top: 70px;
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url("https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg");
+
+  height: 90vh;
+  overflow: hidden;
+}
+.header__content {
+  width: 70%;
+  max-width: 900px;
+  margin: 15rem auto;
+  text-align: center;
+  /* background-color: #fbbf24; */
+}
+.header__content > h1 {
+  font-size: 3.7rem;
+  text-transform: uppercase;
+  word-spacing: 5px;
+}
+.header__content > p {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+.primary-btn {
+  background-color: var(--theme-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 0.4rem;
+  margin: 2rem 0rem;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+.header__content > button {
+  padding: 1.1rem 3.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.header::-webkit-scrollbar {
+  display: none;
+}
